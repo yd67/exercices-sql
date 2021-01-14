@@ -1,10 +1,34 @@
-<html lang="en">
+
+<?php
+require_once('./includes/bdd.inc.php');
+
+?>
+
+
+
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<?php
+   require('./templates/head.inc.html');
+   ?>
 </head>
 <body>
-    <h1>  index php</h1>
+    
+    <header>
+        <?php 
+           require('./templates/header.inc.html'); 
+        ?> 
+    </header>
+    
+    <main> <?php  require('./template/main.inc.html')?> </main>
+
+    <footer>
+        <?php 
+           require('./templates/footer.inc.html');
+        ?>
+    </footer>
+
+
+    
 </body>
 </html>
